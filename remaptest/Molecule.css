@@ -1,0 +1,146 @@
+html,body,h1,h2,h3,h4,p,div,ul,li,svg{
+    margin:0;
+    padding:0;
+    font-size:100%;
+	font-family: "Lato";
+	color: rgb(105,105,105);
+	position: relative;
+}
+
+/*------------Structure-------------*/
+html,body{
+    height: 100%;
+    position: relative;
+    background: rgb(217,218,219);
+    color:rgb(0,0,0);
+}
+.div{
+	resize:both;
+	overflow:scroll;
+}
+.container{
+    width:100%;
+    height:100%;
+    position:absolute;
+	padding: 0px;
+}
+.container .canvas{
+    width:100%;
+    height: 20%;
+    margin-top: auto;
+    position:fixed;
+}
+.container.canvas{
+    width:33%;
+    height: 80%;
+    margin-top: auto;
+    position:fixed;
+}
+.container .control{
+    height:100%;
+    width:100%;
+    margin:auto;
+    position:fixed;
+}
+.col-md-1 {
+    width: 6.2%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+	margin-left: 0;
+    background-color: #708090;
+	position: absolute;
+}
+.col-md-2 {
+    width: 67.5%;
+	margin-left: 7.44%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color:  #EFEFEF;
+	overflow:auto;
+	position: absolute;
+}
+.col-md-3 {
+    width: 24%;
+    height: 100%;
+	margin-left: 76%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+    background-color: #EFEFEF;
+	position: absolute;
+	z-index: 5;
+}
+.col-md-4 {
+    width: 67.5%;
+	margin-left: 7.44%;
+    background-color: #EFEFEF;
+	position: absolute;
+}
+.col-md-5 {
+	
+}
+.col-md-6 {
+	
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+.form-control{
+    width: 30%;
+    height: 18px;
+    font-size: 5px;
+    border-radius: 8px;
+	margin-right: 30px;
+    float: right;
+}
+.resizable(@direction: both) {
+  // Options: horizontal, vertical, both
+  resize: @direction;
+  // Safari fix
+  overflow: inherit;
+}
+.btnPos{
+
+    position: absolute; 
+    border-width: 0px; 
+    margin-left: 99%;
+
+}
+.btn-arrow-right{
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.btn-arrow-right {
+    padding-left: 36px;
+}
+.btn-arrow-right:before,
+.btn-arrow-right:after,
+{ /* make two squares (before and after), looking similar to the button */
+    content:"";
+    position: absolute;
+    top: 5px; /* move it down because of rounded corners */
+    width: 22px; /* same as height */
+    height: 22px; /* button_outer_height / sqrt(2) */
+    background: inherit; /* use parent background */
+    border: inherit; /* use parent border */
+    border-left-color: transparent; /* hide left border */
+    border-bottom-color: transparent; /* hide bottom border */
+    border-radius: 0px 4px 0px 0px; /* round arrow corner, the shorthand property doesn't accept "inherit" so it is set to 4px */
+	z-index: 10;
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+}
+
+
