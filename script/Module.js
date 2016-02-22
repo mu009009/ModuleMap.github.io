@@ -175,7 +175,7 @@ function dataLoaded(err,module,Level)
 			
 			ToolTip = d3.select("#Tooltip")
 			.style("margin-left",function(){
-				var coordinates = [100, 0];
+				var coordinates = [200, 50];
 				coordinates = d3.mouse(this);
 				var x = coordinates[0];				
 //				return x+buttonWidth/2 + "px";
@@ -195,11 +195,11 @@ function dataLoaded(err,module,Level)
 			var TipString;
 			if(LevelInfo[this.value-1].ReNumber==0)
 				{
-					TipString = "Need " + (LevelInfo[this.value-1].ReNumber+1 - KeyPass) + ",more submit,to unlock,the next level";
+					TipString = "You need to submit" + (LevelInfo[this.value-1].ReNumber+1 - KeyPass) + ",more module,to unlock,the next one";
 				}
 			else
 				{
-					TipString = "Need " + (LevelInfo[this.value-1].ReNumber-KeyPass) + ",more submit,to unlock,the next level";
+					TipString = "You need to submit" + (LevelInfo[this.value-1].ReNumber-KeyPass) + ",more module,to unlock,the next one";
 				}
 			
 			
