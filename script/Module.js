@@ -175,7 +175,7 @@ function dataLoaded(err,module,Level)
 			
 			ToolTip = d3.select("#Tooltip")
 			.style("margin-left",function(){
-				var coordinates = [0, 0];
+				var coordinates = [100, 0];
 				coordinates = d3.mouse(this);
 				var x = coordinates[0];				
 //				return x+buttonWidth/2 + "px";
