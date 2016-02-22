@@ -1,0 +1,70 @@
+html,body,div,ul,li,svg{
+	margin:20px;
+	padding:10px;
+	list-style:none;
+}
+
+/*------------Global-------------*/
+html,body{
+	height: 100%;
+	position: relative;
+	background: rgb(239,235,233);
+}
+
+.container{
+    height:100%;
+    width: 100%;
+    position: relative;
+
+}
+.container .section{
+	width:100%;
+}
+.container .canvas{
+	width:100%;
+	position: relative;
+	background:white;
+	height:600px;
+}
+.container .controls{
+	margin-bottom:20px;
+}
+
+/*------------font-------------*/
+body{
+	font-size: 16px;
+		font-family:'Helvetica Neue'
+	}
+h1{ font-size:2em;
+	font-family:'Helvetica Neue';
+	margin-left: 20px;
+	}
+h2{ font-size:1.3em;}
+p{
+	font-family:'Helvetica Neue';
+	margin-left: 20px;
+
+
+	}
+
+/*------------svg--------------*/
+.axis{
+    fill:none;
+    stroke:rgb(80,80,80);
+    stroke-width:1px;
+    stroke-dasharray:3px 3px;
+}
+
+svg text{
+    font-size:9px;
+}
+.activity-2 path,
+.activity-2 text{
+    fill-opacity:.8;
+}
+.activity-2:hover path{
+    fill-opacity:1;
+}
+.activity-2:hover text;{
+    fill-opacity:1;
+}
