@@ -136,7 +136,7 @@ function dataLoaded(err,module,Level)
 		.style("opacity",function(d){
 			if(this.disabled)
 				{
-					return 0.2;
+					return 0.1;
 				}
 			else
 				{

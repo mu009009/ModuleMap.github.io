@@ -7,7 +7,7 @@ var windowHeight = window.innerHeight;
 var marginTopForMidPart = 0.25
 
 //Get the width blank 
-var WidthBlank = document.getElementById('ProfeilePart').offsetWidth * 0.20;
+var WidthBlank = document.getElementById('ProfeilePart').offsetWidth * 0.10;
 console.log("My screen is 15.6 inches, 1920*1080");
 console.log("");
 console.log("The Left Part Width: " + document.getElementById('ProfeilePart').offsetWidth + "px");
