@@ -334,6 +334,23 @@ function dataLoaded(err,module,Level)
 	console.log(DrawButton[0][0].__data__);
 	console.log(DrawButton);
 	
+	var ReloadButton = d3.select('#plot')
+		.append("button")
+		.attr("class","btn btn-warning")
+		.attr("type","button")
+		.attr("value","Change Source")
+		.attr("selected",1)
+		.style("width",SubmitButtonWidth + "px")
+		.style("height",SubmitButtonHeight + "px")
+		.style("margin-left",88 + "%")
+		.style("padding-left",1.5+"px")
+		.style("position","absolute")
+		.text("Restart")
+		.style("font-size",14 + "px")
+		.on("click",function(){
+			window.location.reload();
+		});		
+	
 	var SubmitButton = d3.select('#plot')
 		.append("button")
 		.attr("class","btn btn-warning")
@@ -418,23 +435,6 @@ function dataLoaded(err,module,Level)
 						}
 				}
 		});
-	
-	var ReloadButton = d3.select('#plot')
-		.append("button")
-		.attr("class","btn btn-warning")
-		.attr("type","button")
-		.attr("value","Change Source")
-		.attr("selected",1)
-		.style("width",SubmitButtonWidth + "px")
-		.style("height",SubmitButtonHeight + "px")
-		.style("margin-left",88 + "%")
-		.style("padding-left",1.5+"px")
-		.style("position","absolute")
-		.text("Restart")
-		.style("font-size",14 + "px")
-		.on("click",function(){
-			window.location.reload();
-		});	
 }
 
 function changeModule(ModuleAddress)
