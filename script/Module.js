@@ -409,6 +409,11 @@ function dataLoaded(err,module,Level)
 										KeyBluePass = 0;
 										KeyGreenPass = 0;
 										LevelNumber = LevelNumber + 1;
+									
+										if((PreviousSelectLevel+1)>7)
+										   {
+											   window.location.href = "https://docs.google.com/forms/d/1PKCxIjLPtBtsXLbYSDMN_nCFz8gjZdh5Uv5k5-fWgEY/viewform?c=0&w=1&usp=mail_form_link";
+										   }
 								}
 						}
 				}
